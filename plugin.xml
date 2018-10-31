@@ -46,6 +46,9 @@
     <dependency id="cordova-plugin-cocoapod-support"/>
     <!-- iOS Configuration -->
     <platform name="ios">
+        <hook type="after_platform_add" src="scripts/after_install.js" />
+	    <!-- Hook to add URL scheme for paypal after installation -->
+	    <hook type="after_plugin_install" src="scripts/after_install.js" />
         <pods-config ios-min-version="9.0">
         </pods-config>
         <config-file target="config.xml" parent="/*">
