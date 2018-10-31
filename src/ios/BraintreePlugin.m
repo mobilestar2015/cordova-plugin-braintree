@@ -6,16 +6,17 @@
 
 #import "BraintreePlugin.h"
 #import <objc/runtime.h>
-#import <BraintreeDropIn/BraintreeDropIn.h>
-#import <BraintreeDropIn/BTDropInController.h>
-#import <BraintreeCore/BTAPIClient.h>
-#import <BraintreeCore/BTPaymentMethodNonce.h>
-#import <BraintreeCard/BTCardNonce.h>
-#import <BraintreePayPal/BraintreePayPal.h>
-#import <BraintreeApplePay/BraintreeApplePay.h>
-#import <Braintree3DSecure/Braintree3DSecure.h>
-#import <BraintreeVenmo/BraintreeVenmo.h>
+#import "BraintreeDropIn.h"
+#import "BTDropInController.h"
+#import "BTAPIClient.h"
+#import "BTPaymentMethodNonce.h"
+#import "BTCardNonce.h"
+#import "BraintreePayPal.h"
+#import "BraintreeApplePay.h"
+#import "Braintree3DSecure.h"
+#import "BraintreeVenmo.h"
 #import "AppDelegate.h"
+#import <PassKit/PassKit.h>
 
 @interface BraintreePlugin() <PKPaymentAuthorizationViewControllerDelegate>
 
